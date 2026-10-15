@@ -41,7 +41,7 @@ jobs:
       - name: Documentacion con pdoc
         run: pdoc -o docs/api json2csv
       - name: Publicar documentacion
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: docs
           path: docs/api
