@@ -1,0 +1,10 @@
+# Herramientas de desarrollo y calidad (json2csv no tiene dependencias de ejecución)
+pytest==9.1.1
+pytest-cov==7.1.0
+ruff==0.17.0
+black==26.10.1
+pydocstyle==6.3.0
+mypy==2.4.0
+pyright==1.1.414
+bandit==1.9.4
+pdoc==16.0.0
