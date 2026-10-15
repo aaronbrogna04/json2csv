@@ -12,14 +12,11 @@ Please include:
 
 ## Security Measures
 
-This project ships with security hardening out of the box:
+This project includes the following security measures:
 
-- **CodeQL** scans public repositories for injection, SSRF, path traversal, and other dataflow vulnerabilities using the `security-extended` query suite. Private repositories can opt in after enabling GitHub Code Security.
-- **Zizmor** audits GitHub Actions workflows for excessive permissions, unpinned actions, credential exposure, and cache poisoning risks
+- **Bandit** runs in the GitHub Actions CI workflow on every push to `main` and every pull request, scanning `src` for common security issues
 - **Dependabot** checks weekly for updates to pip dependencies and GitHub Actions
-- **All actions pinned by SHA** with version comments, not floating tags
-- **Minimal workflow permissions** (`permissions: {}` at the top level, scoped per job)
-- **`persist-credentials: false`** on checkout steps to prevent token leakage
+- **Minimal workflow permissions** (`permissions: contents: read`)
 
 ## Response Times
 
